@@ -3,16 +3,16 @@ body {
 		line-height: 32px;
 		color: #777777;
     width:100%;
-        height: 100%;
-        background-image: url(../images/beachbridge.jpeg);
-        background-size: 120%, 120%;
-        background-repeat: no-repeat;
-        margin:0px;		
-      }
+    height: 100%;
+    background-image: url(../images/beachbridge.jpeg);
+    background-size: 170%, 170%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
 
 /*------------HEADER -----------*/
 
-	.headercontainer{
+.headercontainer{
 		width:100%;
 		height: 118px;
 		margin: 0px;
@@ -20,7 +20,7 @@ body {
     background-color: white;
 }
 
-	header {
+header {
 		width: 100%px;
     padding: 25px;
     text-align: center;
@@ -38,84 +38,108 @@ body {
 /*------------NAV -----------*/
 #navbar {
 }
-
 #navbar #container ul{
-  list-style: none;
-  margin:0;
-  padding:0;
+    list-style: none;
+    margin:0;
+   padding:0;
 }
 #navbar #container ul li a{
-  text-decoration:none;
-  float: left;
-  margin:5px;
-  width: 10%;
-  padding: 10px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 50px;
-  font-size: 30px;
-  text-align: center;
-  background-color: white;
-  color: #777777;
-  border-left: solid 1px #777777;
-  font-family: 'Clicker Script', cursive;     
+    text-decoration:none;
+    float: left;
+    margin:5px;
+    width: 10%;
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    background-color: white;
+    color: #777777;
+    border-left: solid 1px #777777;
+    font-family: 'Clicker Script', cursive;     
+}
+
+#navbar #container ul li a:hover {
+    background-color: #777777;
+    color: white;
+    border-left: solid 1px #777777;
+    font-family: 'Clicker Script', cursive;     
 }
 	
 /* --------------------  SECTION:  -------------------*/
- section {
+section {
     float: left;
     margin: 5% 5%;
     width: 650px;
     background-color:#ffffff;
     border: 1px solid #dddddd;
     padding: 40px;
-    
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+} 
 
-
-  } 
-
-  hr {
-    width: 88%;
-  }	  
+hr {
+  width: 88%;
+}	  
 /* ------------ASIDE/CONNECT WITH ME ----------------*/      
-  aside {
-        margin-left: 25px;
-        background-color: #ffffff;
-        border: 1px solid #dddddd;
-        width: 270px;
-        margin-top: 60px;
-        padding: 5px;
-        border: 5px solid #deb887;
-        text-align: center;
-        float:right;
-        margin-right: 20px;
-  } 
+aside {
+  margin-left: 25px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  width: 270px;
+  height:200px;
+  margin-top: 57px;
+  padding: 5px;
+  border: 5px solid #deb887;
+  text-align: center;
+  float:right;
+  margin-left: 10px;
+  margin-right: 30px;  
+  padding-right: 20px;
+} 
+
+#title {
+  text-align: center;
+  margin-left: 10px;
+}
       
-      .connectME{
-        border: 1px solid #dddddd;
-        
-        }
+.connectME{
+  border: 1px solid #dddddd;
+  padding-right: 10px
+}
       
-      #connect{
-        height:50px;
-        background-color: none;
-        border: none;
-        
-      }
+#connect{
+  height:50px;
+  background-color: none;
+  border: none;  
+}
+      
+      /*!!!!!!!!HOVER!!!!!!!!*/
+#connect:hover {
+  height:50px;
+  background-color: #4aaaa5;
+  border: none;  
+}
 /* ----------------------FOOTER ------------------------*/
   
-  footer {
-      margin-top: 25px;
-      width: 100%;
-      border-top: 10px solid #4aaaa5;
-      background: #666666;
-      color: #f5f5f5;
-      font-family: 'Clicker Script', cursive;
-      font-size: 30px;
-      font-weight: bold;
-      padding: 20px;
-      clear: both;
-      text-align: center;
+footer {
+  margin-top: 25px;
+  width: 100%;
+  border-top: 10px solid #4aaaa5;
+  background: #666666;
+  color: #f5f5f5;
+  font-family: 'Clicker Script', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+  clear: both;
+  text-align: center;
+  display: block;
+  /*!!!!!!!!!STICKY FOOTER !!!!!!!!*/
+  height:20px;
+  margin: 0 auto;
+  position: fixed;
+  bottom:0;
    }
  
 /* ------------HOME PAGE: ABOUT ME SECTION ----------------*/	
@@ -134,7 +158,7 @@ body {
   		margin-top: 50px;
   		padding: 20px;
   	  	border: 5px solid #deb887;
-		font-family: 'Arial', sans-serif;
+		  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 		font-size: 23px;	
 		float: left;
 		color: #777777;
@@ -187,12 +211,14 @@ label{
 input{
   width: 475px;
   margin:0px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 textarea{
   width:475px;
   height:200px;
   margin:0;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 fieldset{
@@ -206,6 +232,17 @@ fieldset{
 
 .btn {
   width: 125px;
+  background-color: #4aaaa5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+      /*!!!!!!!!HOVER!!!!!!!!*/
+.btn:hover{
+  background-color: white;
+  color: #4aaaa5;
+
 }
 
 form h4{    /*only the h4 in the form; thats why form h4*/
@@ -217,14 +254,9 @@ form h4{    /*only the h4 in the form; thats why form h4*/
 
 
 /*--------------- PORTFOLIO SECTION--------------*/
-
-
 .item {
-  
   float:left;
   margin: 20px;
- 
-  
 }
 
 section div img {
@@ -244,11 +276,11 @@ section div img {
   margin-left: 20px;
   text-align: center;
   color:white;
+  font-family: 'Clicker Script', cursive;
+  font-size: 30px;
 }
 
 #portfolio{
-  
-
 }
 
   #bio-image {
